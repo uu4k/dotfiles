@@ -27,5 +27,6 @@ cask "cheatsheet"
 cask "appcleaner"
 cask "flux"
 cask "rescuetime"
+cask "discord"
 mas "Pocket", id: 568494494
 mas "TweetDeck", id: 485812721
