@@ -48,3 +48,7 @@ xcode-select --install > /dev/null 2>&1
 which -s brew || /usr/bin/ruby -e "$(curl -fsSL https://raw.githubusercontent.com/Homebrew/install/master/install)"
 
 brew bundle
+
+# install nodejs
+nodenv install -s 10.16.3
+nodenv global 10.16.3
