@@ -8,7 +8,9 @@ if [ -e $DOTPATH ]; then
 else
     if which -s git; then
         git clone --recursive "$GITHUB_URL" "$DOTPATH"
+        git remote set-url origin git@github.com:uu4k/dotfiles.git
 
+    	cd $DOTPATH
     elif which -s curl || has "wget"; then
         tarball="$GITHUB_URL/archive/master.tar.gz"
 
@@ -22,11 +24,10 @@ else
 
         mv -f dotfiles-master "$DOTPATH"
 
+    	cd $DOTPATH
     else
         die "curl or wget required"
     fi
-
-    cd $DOTPATH
 fi
 
 if [ $? -ne 0 ]; then
