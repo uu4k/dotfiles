@@ -2,10 +2,10 @@
 GITHUB_URL=https://github.com/uu4k/dotfiles
 DOTPATH=~/.dotfiles
 
-if has "git"; then
+if which -s git; then
     git clone --recursive "$GITHUB_URL" "$DOTPATH"
 
-elif has "curl" || has "wget"; then
+elif which -s curl || has "wget"; then
     tarball="$GITHUB_URL/archive/master.tar.gz"
 
     if has "curl"; then
