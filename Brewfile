@@ -10,6 +10,7 @@ brew "tree"
 brew "wget"
 brew "mas"
 brew "nodenv"
+brew 'yarn', args: ["ignore-dependencies"]
 cask "alfred"
 cask "docker"
 cask "kindle"
