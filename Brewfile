@@ -31,5 +31,6 @@ cask "flux"
 cask "rescuetime"
 cask "discord"
 cask "vivaldi"
+cask "spectacle"
 mas "Pocket", id: 568494494
 mas "TweetDeck", id: 485812721
