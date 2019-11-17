@@ -54,5 +54,6 @@ nodenv install -s 10.16.3
 nodenv global 10.16.3
 
 # instal vue
+# yarn cache clean
 yarn global add @vue/cli
 

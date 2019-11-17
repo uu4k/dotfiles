@@ -6,11 +6,15 @@ brew "git"
 brew "ruby-build"
 brew "rbenv"
 brew "terraform"
+brew "tfenv"
 brew "tree"
 brew "wget"
 brew "mas"
 brew "nodenv"
 brew 'yarn', args: ["ignore-dependencies"]
+brew 'awscli'
+brew 'jq'
+cask 'android-studio'
 cask "alfred"
 cask "docker"
 cask "kindle"
@@ -32,5 +36,10 @@ cask "rescuetime"
 cask "discord"
 cask "vivaldi"
 cask "spectacle"
+cask "unity"
+cask "stoplight-studio"
+cask "boostnote"
+cask "google-backup-and-sync"
+mas "Xcode", id: 497799835
 mas "Pocket", id: 568494494
 mas "TweetDeck", id: 485812721
