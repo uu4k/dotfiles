@@ -14,6 +14,8 @@ brew "nodenv"
 brew 'yarn', args: ["ignore-dependencies"]
 brew 'awscli'
 brew 'jq'
+brew 'git-secrets'
+brew 'tflint'
 cask 'android-studio'
 cask "alfred"
 cask "docker"
@@ -40,6 +42,7 @@ cask "unity"
 cask "stoplight-studio"
 cask "boostnote"
 cask "google-backup-and-sync"
+cask "toggl"
 mas "Xcode", id: 497799835
 mas "Pocket", id: 568494494
 mas "TweetDeck", id: 485812721
