@@ -49,6 +49,9 @@ which -s brew || /usr/bin/ruby -e "$(curl -fsSL https://raw.githubusercontent.co
 
 brew bundle
 
+# install heroku plugin
+heroku plugins:install heroku-config
+
 # install nodejs
 nodenv install -s 10.16.3
 nodenv global 10.16.3

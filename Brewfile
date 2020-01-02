@@ -1,6 +1,7 @@
 tap "homebrew/bundle"
 tap "homebrew/cask"
 tap "homebrew/core"
+tap "heroku/brew"
 brew "gcc"
 brew "git"
 brew "ruby-build"
@@ -16,6 +17,11 @@ brew 'awscli'
 brew 'jq'
 brew 'git-secrets'
 brew 'tflint'
+brew "mysql@5.7", link: true
+brew 'openssl', link: true
+brew 'graphviz'
+brew 'heroku'
+brew 'postgresql'
 cask 'android-studio'
 cask "alfred"
 cask "docker"
@@ -39,10 +45,12 @@ cask "discord"
 cask "vivaldi"
 cask "spectacle"
 cask "unity"
+cask "unity-hub"
 cask "stoplight-studio"
 cask "boostnote"
 cask "google-backup-and-sync"
 cask "toggl"
+cask "psequel"
 mas "Xcode", id: 497799835
 mas "Pocket", id: 568494494
 mas "TweetDeck", id: 485812721
