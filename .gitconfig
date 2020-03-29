@@ -31,3 +31,5 @@
 	logo = log --oneline
 	logn = log --name-status --oneline
 	firstcom = commit --allow-empty -m \"Initial commit\"
+[core]
+	autocrlf = input
