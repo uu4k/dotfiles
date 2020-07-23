@@ -23,6 +23,7 @@ brew 'openssl', link: true
 brew 'graphviz'
 brew 'heroku'
 brew 'postgresql'
+brew 'python3'
 cask 'android-studio'
 cask "alfred"
 cask "docker"
@@ -55,3 +56,4 @@ cask "psequel"
 mas "Xcode", id: 497799835
 mas "Pocket", id: 568494494
 mas "TweetDeck", id: 485812721
+mas "Sequel Ace", id: 1518036000
