@@ -39,7 +39,6 @@ do
     [ "$f" = ".git" ] && continue
 
     ln -snfv "$DOTPATH/$f" "$HOME/$f"
-    echo "$DOTPATH/$f -> $HOME/$f"
 done
 
 source ~/.zprofile
@@ -73,4 +72,3 @@ nodenv global 10.16.3
 # instal vue
 # yarn cache clean
 yarn global add @vue/cli
-
