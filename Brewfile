@@ -6,13 +6,9 @@ brew "gcc"
 brew "git"
 brew "gibo"
 brew "ruby-build"
-brew "rbenv"
-brew "terraform"
-brew "tfenv"
 brew "tree"
 brew "wget"
 brew "mas"
-brew "nodenv"
 brew 'yarn', args: ["ignore-dependencies"]
 brew 'awscli'
 brew 'jq'
@@ -24,13 +20,14 @@ brew 'graphviz'
 brew 'heroku'
 brew 'postgresql'
 brew 'python3'
+brew 'anyenv'
+brew 'zsh-completions'
 cask 'android-studio'
 cask "alfred"
 cask "docker"
 cask "kindle"
 cask "honto"
 cask "dropbox"
-cask "homebrew/cask-versions/sequel-pro-nightly"
 cask "visual-studio-code"
 cask "postman"
 cask "google-chrome"
@@ -38,7 +35,6 @@ cask "google-japanese-ime"
 cask "slack"
 cask "iterm2"
 cask "ngrok"
-cask "amazon-music"
 cask "cheatsheet"
 cask "appcleaner"
 cask "flux"
@@ -48,12 +44,13 @@ cask "vivaldi"
 cask "spectacle"
 cask "unity"
 cask "unity-hub"
-cask "stoplight-studio"
-cask "boostnote"
 cask "google-backup-and-sync"
-cask "toggl"
-cask "psequel"
+cask "homebrew/cask-drivers/displaylink"
+cask "rubymine"
+cask "spectacle"
 mas "Xcode", id: 497799835
 mas "Pocket", id: 568494494
 mas "TweetDeck", id: 485812721
 mas "Sequel Ace", id: 1518036000
+mas "Display Menu", id: 549083868
+mas "RunCat", id: 1429033973

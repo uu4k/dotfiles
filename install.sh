@@ -1,4 +1,4 @@
-#!/bin/bash
+#!/bin/zsh
 GITHUB_URL=https://github.com/uu4k/dotfiles
 DOTPATH=~/.dotfiles
 
@@ -39,15 +39,29 @@ do
     [ "$f" = ".git" ] && continue
 
     ln -snfv "$DOTPATH/$f" "$HOME/$f"
+    echo "$DOTPATH/$f -> $HOME/$f"
 done
+
+source ~/.zprofile
 
 # instal xcode command line tools
 xcode-select --install > /dev/null 2>&1
+sudo xcodebuild -license accept
+
+# Rosetta 2
+sudo softwareupdate --install-rosetta
 
 # install homebrew
 which -s brew || /usr/bin/ruby -e "$(curl -fsSL https://raw.githubusercontent.com/Homebrew/install/master/install)"
 
 brew bundle
+
+# anyenv
+anyenv init
+anyenv install --init
+anyenv install rbenv
+anyenv install nodenv
+# exec $SHELL -l
 
 # install heroku plugin
 heroku plugins:install heroku-config
