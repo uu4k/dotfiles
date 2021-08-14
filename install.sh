@@ -41,6 +41,9 @@ do
     ln -snfv "$DOTPATH/$f" "$HOME/$f"
 done
 
+# zsh
+mkdir ~/.zsh
+curl -o ~/.zsh/git-prompt.sh https://raw.githubusercontent.com/git/git/master/contrib/completion/git-prompt.sh
 source ~/.zprofile
 
 # instal xcode command line tools
@@ -72,3 +75,4 @@ nodenv global 10.16.3
 # instal vue
 # yarn cache clean
 yarn global add @vue/cli
+
