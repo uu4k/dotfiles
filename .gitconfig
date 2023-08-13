@@ -1,6 +1,7 @@
 [user]
 	name = uu4k
 	email = t.shimizu1115@gmail.com
+	signingkey = CECA56FEE934380A
 [secrets]
 	providers = git secrets --aws-provider
 	patterns = (A3T[A-Z0-9]|AKIA|AGPA|AIDA|AROA|AIPA|ANPA|ANVA|ASIA)[A-Z0-9]{16}
@@ -33,3 +34,5 @@
 	firstcom = commit --allow-empty -m \"Initial commit\"
 [core]
 	autocrlf = input
+[commit]
+	gpgsign = true
