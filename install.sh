@@ -69,8 +69,8 @@ anyenv install nodenv
 heroku plugins:install heroku-config
 
 # install nodejs
-nodenv install -s 10.16.3
-nodenv global 10.16.3
+nodenv install -s 16.6.2
+nodenv global 16.6.2
 
 # instal vue
 # yarn cache clean

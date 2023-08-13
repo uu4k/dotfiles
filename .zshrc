@@ -46,3 +46,7 @@ setopt extended_glob
 
 # コマンドのスペルミスを指摘
 setopt correct
+
+
+
+export PATH=/Applications/Unity/Hub/Editor/2021.2.7f1/PlaybackEngines/AndroidPlayer/SDK/platform-tools:$PATH

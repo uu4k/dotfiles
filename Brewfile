@@ -50,7 +50,6 @@ cask "rubymine"
 cask "spectacle"
 mas "Xcode", id: 497799835
 mas "Pocket", id: 568494494
-mas "TweetDeck", id: 485812721
 mas "Sequel Ace", id: 1518036000
 mas "Display Menu", id: 549083868
 mas "RunCat", id: 1429033973
