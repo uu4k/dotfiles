@@ -37,6 +37,7 @@ fi
 for f in .??*
 do
     [ "$f" = ".git" ] && continue
+    [ "$f" = ".claude" ] && continue
 
     ln -snfv "$DOTPATH/$f" "$HOME/$f"
 done
@@ -45,6 +46,13 @@ done
 mkdir ~/.zsh
 curl -o ~/.zsh/git-prompt.sh https://raw.githubusercontent.com/git/git/master/contrib/completion/git-prompt.sh
 source ~/.zprofile
+
+# Claude Code config
+mkdir -p "$HOME/.claude"
+for f in .claude/*
+do
+    ln -snfv "$DOTPATH/$f" "$HOME/$f"
+done
 
 # instal xcode command line tools
 xcode-select --install > /dev/null 2>&1

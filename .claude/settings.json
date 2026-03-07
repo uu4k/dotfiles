@@ -1,0 +1,28 @@
+{
+  "env": {
+    "CLAUDE_CODE_ENABLE_TELEMETRY": "1"
+  },
+  "permissions": {
+    "allow": [
+      "Bash(npm run:*)",
+      "Bash(pnpm run:*)",
+      "Bash(docker-compose:*)",
+      "Bash(git commit:*)",
+      "Bash(git add:*)",
+      "Bash(mkdir:*)",
+      "Bash(ls:*)",
+      "Read(~/.zshrc)"
+    ],
+    "deny": [
+      "Bash(rm -rf:*)",
+      "Bash(curl:*)",
+      "Read(./.env)",
+      "Read(./.env.*)",
+      "Read(./secrets/**)"
+    ]
+  },
+  "statusLine": {
+    "type": "command",
+    "command": "/bin/bash ~/.claude/statusline-command.sh"
+  }
+}
