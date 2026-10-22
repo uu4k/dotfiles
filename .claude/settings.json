@@ -19,10 +19,14 @@
       "Read(./.env)",
       "Read(./.env.*)",
       "Read(./secrets/**)"
-    ]
+    ],
+    "defaultMode": "plan"
   },
   "statusLine": {
     "type": "command",
     "command": "/bin/bash ~/.claude/statusline-command.sh"
-  }
+  },
+  "tui": "fullscreen",
+  "theme": "dark-daltonized",
+  "model": "opus"
 }

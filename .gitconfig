@@ -11,6 +11,7 @@
 	allowed = wJalrXUtnFEMI/K7MDENG/bPxRfiCYEXAMPLEKEY
 [init]
 	templatedir = ~/.git-templates/git-secrets
+	defaultBranch = main
 
 [alias]
 	ss = status
@@ -34,5 +35,8 @@
 	firstcom = commit --allow-empty -m \"Initial commit\"
 [core]
 	autocrlf = input
+	excludesfile = ~/.config/git/ignore
 [commit]
 	gpgsign = true
+[push]
+	autoSetupRemote = true
